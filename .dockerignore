@@ -1,0 +1,10 @@
+logs/
+.venv/
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+.git/
+.gitignore
+.codegpt/
+debug_hotel.ipynb
+tests/

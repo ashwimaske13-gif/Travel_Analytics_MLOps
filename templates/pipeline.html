@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Travel Analytics | MLOps Pipeline</title>
+
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+        rel="stylesheet">
+
+    <style>
+
+        body {
+            background: #f5f7fa;
+            font-family: Arial, sans-serif;
+        }
+
+        .header {
+            background: #212529;
+            color: white;
+            padding: 25px;
+            text-align: center;
+        }
+
+        .pipeline-container {
+            max-width: 1200px;
+            margin: 40px auto;
+        }
+
+        .stage {
+            background: white;
+            border-radius: 12px;
+            padding: 25px;
+            margin-bottom: 20px;
+            box-shadow: 0 3px 12px rgba(0,0,0,0.08);
+            border-left: 6px solid #198754;
+        }
+
+        .stage h4 {
+            margin-bottom: 10px;
+        }
+
+        .status {
+            display: inline-block;
+            background: #198754;
+            color: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 14px;
+            font-weight: bold;
+        }
+
+        .arrow {
+            text-align: center;
+            font-size: 25px;
+            margin: -5px 0 10px 0;
+        }
+
+        .back-btn {
+            margin-top: 20px;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+<div class="header">
+
+    <h1>🚀 MLOps Pipeline</h1>
+
+    <p>
+        Travel Analytics Production Pipeline
+    </p>
+
+</div>
+
+
+<div class="pipeline-container">
+
+    <div class="stage">
+
+        <h4>1. Source Code</h4>
+
+        <p>
+            Flask application, ML models, configuration,
+            templates and supporting modules.
+        </p>
+
+        <span class="status">
+            COMPLETED
+        </span>
+
+    </div>
+
+
+    <div class="arrow">
+        ↓
+    </div>
+
+
+    <div class="stage">
+
+        <h4>2. Model Training</h4>
+
+        <p>
+            Flight price prediction, gender classification
+            and hotel recommendation models.
+        </p>
+
+        <span class="status">
+            COMPLETED
+        </span>
+
+    </div>
+
+
+    <div class="arrow">
+        ↓
+    </div>
+
+
+    <div class="stage">
+
+        <h4>3. MLflow Tracking</h4>
+
+        <p>
+            Experiments, parameters, metrics and model
+            artifacts are tracked using MLflow.
+        </p>
+
+        <span class="status">
+            RUNNING
+        </span>
+
+    </div>
+
+
+    <div class="arrow">
+        ↓
+    </div>
+
+
+    <div class="stage">
+
+        <h4>4. Docker</h4>
+
+        <p>
+            The Travel Analytics Flask application is
+            containerized using Docker.
+        </p>
+
+        <span class="status">
+            COMPLETED
+        </span>
+
+    </div>
+
+
+    <div class="arrow">
+        ↓
+    </div>
+
+
+    <div class="stage">
+
+        <h4>5. Kubernetes</h4>
+
+        <p>
+            Application is deployed to the Kubernetes
+            cluster using Deployment and Service resources.
+        </p>
+
+        <span class="status">
+            RUNNING
+        </span>
+
+    </div>
+
+
+    <div class="arrow">
+        ↓
+    </div>
+
+
+    <div class="stage">
+
+        <h4>6. Autoscaling & Monitoring</h4>
+
+        <p>
+            Kubernetes Horizontal Pod Autoscaler monitors
+            CPU utilization and scales the application
+            between 1 and 3 replicas.
+        </p>
+
+        <span class="status">
+            RUNNING
+        </span>
+
+    </div>
+
+
+    <div class="text-center">
+
+    <a href="{{ url_for('dashboard') }}"
+       class="btn btn-dark back-btn">
+        ← Back to Dashboard
+    </a>
+
+</div>
+
+</div>
+
+</body>
+</html>

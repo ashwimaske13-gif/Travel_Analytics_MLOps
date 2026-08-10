@@ -1,0 +1,420 @@
+/* ==========================================
+   TRAVEL ANALYTICS MLOPS
+========================================== */
+
+body{
+
+    background:#f4f7fc;
+
+    font-family:'Segoe UI',Tahoma,Geneva,Verdana,sans-serif;
+
+}
+
+
+/* ==========================================
+   NAVBAR
+========================================== */
+
+.navbar{
+
+    box-shadow:0 2px 12px rgba(0,0,0,.15);
+
+}
+
+.navbar-brand{
+
+    font-size:28px;
+
+    font-weight:bold;
+
+}
+
+
+/* ==========================================
+   CARDS
+========================================== */
+
+.card{
+
+    border:none;
+
+    border-radius:18px;
+
+    transition:.35s;
+
+}
+
+.card:hover{
+
+    transform:translateY(-6px);
+
+    box-shadow:0 18px 40px rgba(0,0,0,.18);
+
+}
+
+
+/* ==========================================
+   HEADER
+========================================== */
+
+.card-header{
+
+    border-radius:18px 18px 0 0 !important;
+
+    padding:22px;
+
+}
+
+.card-header h2{
+
+    margin:0;
+
+    font-weight:bold;
+
+}
+
+
+/* ==========================================
+   LABELS
+========================================== */
+
+label{
+
+    font-weight:600;
+
+    margin-bottom:8px;
+
+}
+
+
+/* ==========================================
+   INPUT
+========================================== */
+
+.form-control{
+
+    border-radius:10px;
+
+    padding:10px;
+
+}
+
+.form-select{
+
+    border-radius:10px;
+
+    padding:10px;
+
+}
+
+.form-control:focus{
+
+    box-shadow:0 0 8px rgba(13,110,253,.4);
+
+}
+
+.form-select:focus{
+
+    box-shadow:0 0 8px rgba(13,110,253,.4);
+
+}
+
+
+/* ==========================================
+   BUTTONS
+========================================== */
+
+.btn{
+
+    border-radius:10px;
+
+    padding:10px 28px;
+
+    font-weight:bold;
+
+    transition:.3s;
+
+}
+
+.btn:hover{
+
+    transform:scale(1.05);
+
+}
+
+
+/* ==========================================
+   DASHBOARD ICONS
+========================================== */
+
+.icon{
+
+    font-size:55px;
+
+}
+
+
+/* ==========================================
+   RESULT CARD
+========================================== */
+
+.result-card{
+
+    background:white;
+
+    border-radius:15px;
+
+    padding:25px;
+
+    box-shadow:0 8px 20px rgba(0,0,0,.12);
+
+}
+
+
+/* ==========================================
+   HOTEL CARD
+========================================== */
+
+.hotel-card{
+
+    border-radius:15px;
+
+    padding:18px;
+
+    background:white;
+
+    box-shadow:0 6px 16px rgba(0,0,0,.12);
+
+    transition:.3s;
+
+}
+
+.hotel-card:hover{
+
+    transform:translateY(-5px);
+
+}
+
+
+/* ==========================================
+   TABLE
+========================================== */
+
+table{
+
+    border-radius:10px;
+
+    overflow:hidden;
+
+}
+
+thead{
+
+    background:#0d6efd;
+
+    color:white;
+
+}
+
+
+/* ==========================================
+   ALERT
+========================================== */
+
+.alert{
+
+    border-radius:12px;
+
+}
+
+
+/* ==========================================
+   FOOTER
+========================================== */
+
+.footer{
+
+    margin-top:50px;
+
+    color:gray;
+
+    text-align:center;
+
+}
+
+/* =====================================================
+   LOGIN PAGE
+   ===================================================== */
+
+.login-page {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #f4f7fb;
+    padding: 40px;
+}
+
+.login-container {
+    width: 100%;
+    max-width: 1150px;
+    min-height: 650px;
+    background: white;
+    border-radius: 20px;
+    box-shadow: 0 15px 45px rgba(0, 0, 0, 0.12);
+    overflow: hidden;
+}
+
+.login-left {
+    background: #f4f7fb;
+    padding: 55px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.login-left h1 {
+    font-size: 42px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.login-left h2 {
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.login-left p {
+    font-size: 19px;
+    line-height: 1.7;
+    max-width: 450px;
+}
+
+.login-left img {
+    width: 280px;
+    max-width: 100%;
+    margin-top: 25px;
+}
+
+.login-right {
+    padding: 65px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.login-right h2 {
+    font-size: 38px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.login-right p {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.login-right label {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+.login-right input {
+    height: 58px;
+    font-size: 18px;
+    border-radius: 10px;
+}
+
+.login-right .form-control {
+    padding: 12px 18px;
+}
+
+.login-btn {
+    width: 100%;
+    height: 58px;
+    font-size: 19px;
+    font-weight: 600;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+/* =====================================================
+   RESPONSIVE
+   ===================================================== */
+
+@media (max-width: 768px) {
+
+    .login-page {
+        padding: 20px;
+    }
+
+    .login-container {
+        min-height: auto;
+    }
+
+    .login-left {
+        padding: 35px 20px;
+    }
+
+    .login-left h1 {
+        font-size: 32px;
+    }
+
+    .login-left h2 {
+        font-size: 24px;
+    }
+
+    .login-right {
+        padding: 35px 25px;
+    }
+
+    .login-right h2 {
+        font-size: 30px;
+    }
+}
+
+
+/* ==========================================
+   PREDICTION
+========================================== */
+
+.prediction{
+
+    font-size:42px;
+
+    color:#198754;
+
+    font-weight:bold;
+
+}
+
+
+/* ==========================================
+   RESPONSIVE
+========================================== */
+
+@media(max-width:768px){
+
+.icon{
+
+font-size:45px;
+
+}
+
+.card{
+
+margin-bottom:20px;
+
+}
+
+.card-header h2{
+
+font-size:24px;
+
+}
+
+}

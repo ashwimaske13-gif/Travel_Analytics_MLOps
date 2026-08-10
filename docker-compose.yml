@@ -1,0 +1,12 @@
+services:
+  travel-analytics:
+    build:
+      context: .
+      dockerfile: Dockerfile
+
+    container_name: travel-analytics-app
+
+    ports:
+      - "5000:5000"
+
+    restart: unless-stopped
