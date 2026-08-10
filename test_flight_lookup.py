@@ -1,46 +1,51 @@
 from src.utils.flight_lookup import FlightLookup
 
-lookup = FlightLookup()
 
-print()
+def test_get_all_from_locations():
+    lookup = FlightLookup()
 
-print("FROM Cities")
-print("----------------")
-print(lookup.get_all_from_locations())
+    locations = lookup.get_all_from_locations()
 
-print()
+    assert isinstance(locations, list)
+    assert len(locations) > 0
 
-print("TO Cities")
-print("----------------")
-print(lookup.get_all_to_locations())
 
-print()
+def test_get_all_to_locations():
+    lookup = FlightLookup()
 
-print("Airlines")
-print("----------------")
-print(lookup.get_all_airlines())
+    locations = lookup.get_all_to_locations()
 
-print()
+    assert isinstance(locations, list)
+    assert len(locations) > 0
 
-print("Flight Types")
-print("----------------")
-print(lookup.get_all_flight_types())
 
-print()
+def test_get_all_airlines():
+    lookup = FlightLookup()
 
-print("Sample Route")
-print("----------------")
+    airlines = lookup.get_all_airlines()
 
-print(
+    assert isinstance(airlines, list)
+    assert len(airlines) > 0
 
-    lookup.get_route_information(
 
+def test_get_all_flight_types():
+    lookup = FlightLookup()
+
+    flight_types = lookup.get_all_flight_types()
+
+    assert isinstance(flight_types, list)
+    assert len(flight_types) > 0
+
+
+def test_get_route_details():
+    lookup = FlightLookup()
+
+    result = lookup.get_route_details(
         "Recife (PE)",
-
         "Florianopolis (SC)",
-
         "FlyingDrops"
-
     )
 
-)
+    assert isinstance(result, dict)
+    assert "distance" in result
+    assert "time" in result
