@@ -296,16 +296,12 @@ def predict():
 
     time = route["time"]
 
-    today = datetime.today()
+    today = datetime(2026, 8, 6)
 
     year = today.year
-
     month = today.month
-
     day = today.day
-
     weekday = today.strftime("%A")
-
     week = today.isocalendar()[1]
 
 

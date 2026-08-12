@@ -42,3 +42,5 @@ dist/
 *.tmp
 *.temp
 "@ | Set-Content .gitignore
+.codegpt
+mlflow_final.db

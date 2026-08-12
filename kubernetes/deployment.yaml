@@ -1,6 +1,10 @@
+import mlflow
+import mlflow.sklearn
+
+mlflow.set_tracking_uri("sqlite:///mlflow.db")
 apiVersion: apps/v1
 kind: Deployment
-
+EXPERIMENT_NAME = "Flight Price Prediction - Random Forest"
 metadata:
   name: travel-analytics
 
@@ -19,8 +23,9 @@ spec:
     spec:
       containers:
         - name: travel-analytics
-          image: travel-analytics:latest
-          imagePullPolicy: Never
+
+          image: ghcr.io/ashwimaske13-gif/travel-analytics-mlops:latest
+          imagePullPolicy: Always
 
           ports:
             - containerPort: 5000
@@ -29,6 +34,7 @@ spec:
             requests:
               cpu: "100m"
               memory: "256Mi"
+
             limits:
               cpu: "500m"
               memory: "512Mi"
